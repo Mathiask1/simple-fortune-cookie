@@ -19,6 +19,9 @@ spec:
     spec:
       containers:
       - image: mathiask1/cookie-backend-app:latest
+        env:
+        - name: REDIS_DNS
+          value: "redis" 
         name: network-backend
         resources: {}
 status: {}
